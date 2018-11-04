@@ -1,0 +1,38 @@
+package Java;
+import java.util.Scanner;
+
+
+public class ValidateUsername 
+{
+
+	public static void main(String[] args) 
+	{
+			Scanner scn=new Scanner (System.in);
+			System.out.println("Enter Username");
+			String name1=scn.next();
+		    System.out.println("Enter password");
+		    String pwd1=scn.next();
+		    String name2="Gautam";
+		    String pwd2= "abcd1234";
+		   if(name1.equalsIgnoreCase(name2))
+		   {
+		   if(pwd1.equalsIgnoreCase(pwd2))
+		   {
+			   System.out.println("Successfully Logged in to your account");
+		   }
+		     
+		   
+		   else
+		   {
+			   System.out.println("Invalid Password!!!Try to get it by clicking on forgot password");
+		   }
+		   }
+	
+		   else
+		   {
+			   System.out.println("Invalid username");
+		   }
+		   }
+}		   
+
+		   
